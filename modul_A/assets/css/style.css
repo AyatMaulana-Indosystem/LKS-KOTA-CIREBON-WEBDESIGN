@@ -1,0 +1,501 @@
+
+@font-face{
+	font-family: 'karla-reg';
+	src : url('../fonts/karla/Karla-Regular.woff');
+}
+
+@font-face{
+	font-family: 'raleways-reg';
+	src: url('../fonts/raleway/Raleway-Regular.woff');
+}
+
+::selection{
+	background: #fb0;
+}
+
+*{
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+header{
+	padding: 0px;
+}
+
+.top-header{
+
+}
+
+.top-header-info{
+	width: 100%;
+	height: 70px;
+	background: #eaedf0;
+	line-height: 70px;
+}
+
+.top-header-info .email{
+	float: left;
+	margin: 0 0 0 20px;
+	font-family: 'karla-reg';
+	color: #394650;
+}
+
+
+.top-header-info .search{
+	float: right;
+	width: 40%;
+	display: inline-block;
+	text-align: right;
+	padding-right: 20px;
+}
+
+.search .search-text{
+	padding: 10px;
+	border: 2px solid gray;
+	width: 50%;
+}
+
+.search .search-btn{
+	padding: 10px;
+	background: #394650;
+	color: white;
+	display: inline;
+}
+
+.top-header-nav{
+	padding: 10px;
+}
+
+.top-header-nav .logo{
+	float: left;
+}
+
+.top-header-nav .contact{
+	float: right;
+}
+
+.top-header-nav nav{
+	width: 100%;
+	margin-top: 30px;
+}
+
+.top-header-nav nav ul{
+	/*display: inline-;*/
+	float: right;
+}
+
+.top-header-nav nav ul li{
+	display: inline-block;
+	margin-right: -10px;
+	position: relative;
+}
+
+.top-header-nav nav ul li a{
+	padding: 20px;
+	text-decoration: none;
+	background: #fb0;
+	color: white;
+	position: relative;
+	font-family: raleways-reg;
+}
+
+.top-header-nav nav ul li a:hover{
+	background: #fd2;
+	position: relative;
+}
+
+.top-header-nav nav ul li:nth-child(1)::before{
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	content: "";
+	top: -20px;
+	left: -50px;
+	border-top: 58px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-left: 0px solid transparent;
+	border-right: 50px solid #fb0;
+	z-index: -1;
+
+}
+
+.bottom-header{
+	width: 100%;
+	height: 600px;
+	margin-top: 30px;
+	background: url(../img/1.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.bottom-header .title{
+	position: absolute;
+	top: 250px;
+	left: 10%;
+	width: 40%;
+	/*background:white;*/
+}
+
+.title .btn-bus, .title .btn-service {
+	background:white;
+	text-align: center;
+	width: 30%;
+	display: block;
+	padding: 20px;
+	text-decoration: none;
+	color: #394650;
+	font-family: karla-reg;
+	font-weight: bold;
+}
+.btn-bus{
+	position: relative;
+}
+
+.btn-bus::before{
+	content: '';
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-top: 30px solid transparent;
+	border-bottom: 29px solid white;
+	border-right: 30px solid transparent;
+	border-left: 30px solid white;
+	right: -60px;
+	top: 0px;
+}
+
+.title span{
+	margin-top: 20px;
+	display: block;
+	font-size: 40px;
+	color: white;
+	font-family: raleways-reg;
+}
+
+.title .btn-service{
+	margin-top: 20px;
+	background: #fb0;
+	color: white;
+}
+
+.content{
+	padding: 10px;
+}
+
+.service, .news{
+	padding: 50px;
+}
+
+.service-title, .news-title{
+	width: 100%;
+	font-family: karla-reg;
+}
+
+.service-title span, .news-title span{
+	color: #2c3740;
+}
+
+.service-title h3, .news-title h3{
+	color: #2c3740;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.service-content, .news-content{
+	padding: 20px;
+}
+
+.card{
+	padding: 2px;
+	display: flex;
+	flex-direction: row;
+}
+
+.card-4{
+	width: 30%;
+	margin: 30px;
+	box-shadow: 0px 0px 5px #94a2ad;
+}
+
+.card-img{
+	width: 100%;
+}
+
+.card-title{
+	margin: 30px;
+	font-family: karla-reg;
+	font-weight: bold;
+	color: #2c3740;
+	font-size: 30px;
+	display: block;
+}
+
+.card-desc{
+	display: block;
+	font-size: 14px;
+	font-family: karla-reg;
+	margin: 30px;
+	color: #94a2ad;
+
+}
+
+.card-read-more{
+	margin: 30px;
+	display: block;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: karla-reg;
+	color: #394650;
+}
+
+.news-title {
+	width: 100%;
+	text-align: center;
+}
+
+
+.info{
+	background: #fb0;
+	padding: 30px;
+}
+
+.info .left{
+	float: left;
+}
+
+.info .left h4{
+	font-family: karla-reg;
+	font-weight: bold;
+	color: white;
+	font-size: 25px;
+}
+
+.info .left span{
+	margin-top: 10px;
+	display: block;
+	color: #466b5b;
+	font-family: raleways-reg;
+}
+
+.info .right{
+	float: right;
+}
+
+.info .right a{
+	display: block;
+	padding: 20px;
+	text-decoration: none;
+	background: #e04622;
+	color: white;
+	font-family: raleways-reg;
+}
+
+footer{
+	background: #394650;
+}
+
+footer .row{
+	padding: 70px;
+	display: flex;
+	flex-direction:row;
+}
+
+.row .navigation .nav-title, .contact_us-title, .subscribe-title{
+	color: white;
+	font-family: karla-reg;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.row .navigation .nav-content, .contact_us-content, .subscribe-content{
+	margin-top: 20px;
+
+}
+
+.row .navigation .nav-content ul {
+	display: block;
+}
+
+.row .navigation .nav-content ul li{
+	width: 37%;
+	float: left;
+	list-style: none;
+	padding: 10px 5px;
+	border-bottom: 1px solid #768591 ;
+	margin-right: 10px;
+}
+
+.row .navigation .nav-content ul li a{
+	text-decoration: none;
+	color: #768591;
+	font-family: raleways-reg;
+}
+
+.contact_us {
+	width: 50%;
+}
+
+.contact_us-content .inf{
+	display: block;
+	margin-bottom: 20px;
+}
+
+.inf b{
+	color: white;
+	font-family: raleways-reg;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.inf span{
+	color: #768591;
+	font-family: raleways-reg;
+}
+
+.phone, .email{
+	font-family: karla-reg;
+	font-weight: bold;
+	color: #768591;
+}
+
+.phone span, .email span{
+	color: white;
+}
+
+.subscribe{
+	width: 50%;
+}
+
+.subscribe, .contact_us, .navigation{
+	margin: 0px 20px;
+}
+
+.subscribe-content{
+	color: #768591;
+	font-family: raleways-reg;
+	display: block;
+	padding: 20px;
+	margin-bottom: 10px;
+
+}
+
+.subscribe-content .subscribe-email{
+	display: block;
+	padding: 10px 0 0 0;
+	box-sizing: border-box;
+}
+
+.subscribe-email .em{
+	padding: 10px;
+	border: 2px solid gray;
+	width: 50%;
+	display: inline-block;
+
+}
+
+.subscribe-email button{
+	background: #fb0;
+	width: 20%;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.feature{
+	padding: 50px;
+	display: block;
+	height: 500px;
+	position: relative;
+}
+
+.feature .f-left{
+	width: 20%;
+	padding-left: 100px;
+}
+
+.f-left .f-title{
+	font-family: raleways-reg;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.f-left .f-title2{
+	display: block;
+	margin-top: 10px;
+	font-family: raleways-reg;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.f-left .f-desc{
+	display: block;
+	margin-top: 30px;
+	font-family: karla-reg;
+}
+
+.f-left .f-btn{
+	text-decoration: none;
+	background: #fb0;
+	width: 50%;
+	padding: 10px;
+	text-align: center;
+	font-family: raleways-reg;
+	color: white;
+	display: block;
+	margin-top: 20px;
+}
+
+.feature .f-right{
+	float: right;
+	width: 60%;
+	position: relative;
+	top: -320px;
+	/*height: 200px;*/
+}
+
+
+.kartu{
+	padding: 20px;
+	display: inline-block;
+}
+
+.kartu-2{
+	display: inline-block;
+	padding: 10px;
+	width: 40%;
+	box-shadow: 0px 0px 5px #94a2ad;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.kartu-img{
+	display: inline-block;
+	width: 20%;
+}
+
+.kartu-text{
+	width: 60%;
+	text-align: right;
+	display: inline-block;
+}
+
+.kartu-text .kartu-judul{
+	font-family: raleways-reg;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.kartu-text .kartu-isi{
+	font-family: raleways-reg;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.copyright{
+	padding: 10px 10px 10px 100px;
+	color: #768591;
+	font-family: raleways-reg;
+}
